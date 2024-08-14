@@ -80,11 +80,11 @@ const App = () => {
         <p style={styles.sectionSubtitle}>
           Explore nossa seleção selecionada de produtos mais bem avaliados e mais vendidos
         </p>
-        <button style={styles.button}>Compre já!</button>
+        <button style={styles.buttonC}>Compre já!</button>
         <div style={styles.collectionItems}>
           <div style={styles.collectionItem}>
             <img 
-              src="https://via.placeholder.com/400x200" 
+              src="https://cdn.usegalileo.ai/stability/c2928f46-6b7f-454d-b077-1854b5da0d06.png" 
               alt="Men's Sneakers" 
               style={styles.collectionImage} 
             />
@@ -245,29 +245,48 @@ const styles = {
     fontWeight: "bolder"
   },
   collections: {
-    padding: "40px 20px",
-    width: "80%"
+    padding: "40px 0px",
+    with: '80%'
   },
   sectionTitle: {
     fontSize: "2em",
     marginBottom: "10px",
+    textAlign: 'left',
+    marginLeft: '10%'
   },
   sectionSubtitle: {
     fontSize: "1.2em",
     marginBottom: "20px",
+    textAlign: 'left',
+    marginLeft: '10%'
+  },
+  buttonC: {
+    backgroundColor: "#007bff",
+    color: "white",
+    padding: "20px 40px",
+    border: "none",
+    cursor: "pointer",
+    fontSize: "1em",
+    borderRadius: "15px",
+    fontWeight: "bolder",
+    marginLeft: '10%'
   },
   collectionItems: {
     display: "flex",
     justifyContent: "space-around",
     marginTop: "20px",
+    padding: "0px 20px",
+    width: '80%',
+    marginLeft: '10%'
   },
   collectionItem: {
     width: "30%",
   },
   collectionImage: {
-    width: "100%",
-    height: "200px",
+    width: "90%",
+    height: "300px",
     objectFit: "cover",
+    borderRadius: '1cm'
   },
   collectionTitle: {
     fontSize: "1.5em",
