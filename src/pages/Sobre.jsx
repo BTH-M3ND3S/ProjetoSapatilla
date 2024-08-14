@@ -1,12 +1,15 @@
 import React from "react";
 import Logo from '../images/logo sapatilla.png'
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Sobre = () => {
+
+  const navigate = useNavigate();
   return (
     <div style={styles.container}>
       <nav style={styles.navbar}>
-        <div style={styles.brand}>
-        <img src={Logo} style={styles.logo} alt="" />
+        <div style={styles.brand} onClick={()=> navigate('/')}>
+        <img  src={Logo} style={styles.logo} alt="" />
           <h2 style={styles.brandName}>Sapatilla</h2>
         </div>
         <div style={styles.navLinks}>
@@ -70,7 +73,7 @@ const Sobre = () => {
           <p style={styles.heroSubtitle}>
             Localizada no interior de São Paulo, nossa loja principal é uma celebração da nossa cidade, da nossa comunidade e do nosso amor por sapatos. A partir do momento em que você entrar, você se sentirá em casa. Estamos aqui para ajudá-lo. Mal podemos esperar para conhecê-lo.
           </p>
-          <button style={styles.button}>Visit Us</button>
+          <button style={styles.button}>Nos Visite!</button>
         </div>
       </section>
 
@@ -153,6 +156,7 @@ const styles = {
   brand: {
     display: "flex",
     alignItems: "center",
+    cursor: "pointer"
   },
   logo: {
     width: "50px",
