@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from '../images/logo sapatilla.png'
+import Banner from '../images/banner.png'
 
 const App = () => {
   return (
@@ -60,7 +61,7 @@ const App = () => {
 
       <section style={styles.hero}>
         <img 
-          src="https://cdn.usegalileo.ai/sdxl10/492ea16f-1ab1-4ed6-ab02-2f5fa96e69d6.png" 
+          src={Banner}
           alt="Shoe Store" 
           style={styles.heroImage} 
         />
@@ -214,16 +215,16 @@ const styles = {
     marginTop: '50px'
   },
   heroImage: {
-    width: "40%",
-    height: "400px",
+    width: "80%",
+    height: "700px",
     objectFit: "cover",
-    borderRadius: '20px'
+    borderRadius: '20px',
   },
   heroText: {
+    left: "15%",
+    top: "60%",
     position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
+    textAlign: "initial",
   },
   heroTitle: {
     fontSize: "2.5em",
@@ -236,15 +237,16 @@ const styles = {
   button: {
     backgroundColor: "#007bff",
     color: "white",
-    padding: "10px 20px",
+    padding: "20px 40px",
     border: "none",
     cursor: "pointer",
     fontSize: "1em",
-    borderRadius: "5px",
+    borderRadius: "15px",
+    fontWeight: "bolder"
   },
   collections: {
     padding: "40px 20px",
-    textAlign: "center",
+    width: "80%"
   },
   sectionTitle: {
     fontSize: "2em",
