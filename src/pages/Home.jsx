@@ -11,7 +11,7 @@ const App = () => {
         </div>
         <div style={styles.navLinks}>
           <a href="#" style={styles.link}>Loja</a>
-          <a href="#" style={styles.link}>Sobre</a>
+          <a href="/about" style={styles.link}>Sobre</a>
           <a href="#" style={styles.link}>Contato</a>
           <a href="#" style={styles.link}>Journal</a>
           <div style={styles.iconGroup}>

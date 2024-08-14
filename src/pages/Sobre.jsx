@@ -4,7 +4,7 @@ const Sobre = () => {
   return (
     <div style={styles.container}>
       <nav style={styles.navbar}>
-        <h1>Sapatilla</h1>
+        <h1><a href="/">Sapatilla</a></h1>
         <div style={styles.navLinks}>
           <a href="#" style={styles.link}>Shop</a>
           <a href="#" style={styles.linkActive}>About</a>
